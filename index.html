@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="description" content="Personal website of Toan Dinh">
+        <meta name="keywords" content="developer,web,tech,programming">
+        <meta name="author" content="Toan Dinh">
+        <meta name="robots" content="all,index,follow">
+        <meta name="theme-color" content="#ffffff">
+        <title>Toan Dinh</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <style>
+            .slide__items {
+                display: inline-block;
+                position: relative;
+                text-align: left
+            }
+
+            .slide__items .slide__item {
+                position: absolute;
+                white-space: nowrap;
+                left: 0;
+                top: 0
+            }
+
+            .slide__items .slide__item.is-visible {
+                position: relative
+            }
+
+            .no-js .slide__items .slide__item {
+                opacity: 0
+            }
+
+            .no-js .slide__items .slide__item.is-visible {
+                opacity: 1
+            }
+
+            .slide .slide__fixed {
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                padding: .2em 0
+            }
+
+            .slide .slide__items {
+                overflow: hidden;
+                vertical-align: top
+            }
+
+            .slide .slide__item {
+                opacity: 0;
+                top: .2em
+            }
+
+            .slide .slide__item.is-visible {
+                top: 0;
+                opacity: 1;
+                -webkit-animation: slide-in .6s;
+                animation: slide-in .6s
+            }
+
+            .slide .slide__item.is-hidden {
+                -webkit-animation: slide-out .6s;
+                animation: slide-out .6s
+            }
+
+            @-webkit-keyframes slide-in {
+                0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%)
+                }
+
+                60% {
+                    opacity: 1;
+                    -webkit-transform: translateY(20%);
+                    transform: translateY(20%)
+                }
+
+                100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+            }
+
+            @keyframes slide-in {
+                0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%)
+                }
+
+                60% {
+                    opacity: 1;
+                    -webkit-transform: translateY(20%);
+                    transform: translateY(20%)
+                }
+
+                100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+            }
+
+            @-webkit-keyframes slide-out {
+                0% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+
+                60% {
+                    opacity: 0;
+                    -webkit-transform: translateY(120%);
+                    transform: translateY(120%)
+                }
+
+                100% {
+                    opacity: 0;
+                    -webkit-transform: translateY(100%);
+                    transform: translateY(100%)
+                }
+            }
+
+            @keyframes slide-out {
+                0% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+
+                60% {
+                    opacity: 0;
+                    -webkit-transform: translateY(120%);
+                    transform: translateY(120%)
+                }
+
+                100% {
+                    opacity: 0;
+                    -webkit-transform: translateY(100%);
+                    transform: translateY(100%)
+                }
+            }
+
+            * {
+                margin: 0;
+                padding: 0
+            }
+
+            body,
+            html {
+                height: 100%;
+                font-size: 100%;
+                font-family: "Hiragino Sans GB", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center
+            }
+
+            main {
+                font-size: 1rem
+            }
+
+            @media only screen and (max-width:375px) {
+                main {
+                    font-size: 1.2rem
+                }
+            }
+
+            .name {
+                font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+                font-weight: 700;
+                font-size: 4em;
+                letter-spacing: -.25rem;
+                text-transform: lowercase;
+                margin: .75rem 0;
+                text-align: center
+            }
+
+            @media only screen and (max-width:375px) {
+                .name {
+                    font-size: 2.75em
+                }
+            }
+
+            .wrapper {
+                margin: 6em auto;
+                text-align: center
+            }
+
+            @media only screen and (max-width:375px) {
+                .wrapper {
+                    margin: 4em auto
+                }
+            }
+
+            @media only screen and (max-width:768px) {
+                .wrapper {
+                    margin: 5em auto
+                }
+            }
+
+            .profile {
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1.2
+            }
+
+            .profile.slide {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex
+            }
+
+            @media only screen and (max-width:375px) {
+                .profile.slide {
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -webkit-box-pack: space-evenly;
+                    -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+                    padding: 0 2em
+                }
+            }
+
+            .title.slide__items .slide__item {
+                text-align: right
+            }
+
+            @media only screen and (max-width:375px) {
+                .title.slide__items .slide__item {
+                    text-align: center
+                }
+            }
+
+            a {
+                color: #999;
+                -webkit-transition: color .2s ease;
+                transition: color .2s ease
+            }
+
+            a:hover {
+                color: #000
+            }
+
+            .links {
+                text-align: center
+            }
+
+            .links li {
+                display: inline;
+                margin-left: .625em;
+                padding: 0 1em;
+                font-size: 1.3em
+            }
+
+            .links li:first-child {
+                margin-left: 0
+            }
+        </style>
+        <script>document.addEventListener("DOMContentLoaded", function (e) { function t() { var e = 0; r.forEach(function (t) { var i = t.offsetWidth; t.offsetWidth > e && (e = i), t.setAttribute("style", "width: 100%;") }), c.querySelector(".slide__items").setAttribute("style", "width: " + e + "px"), setTimeout(function () { i(0) }, o) } function i(e) { var t = r[e], c = r[s(e)]; n(t, c), setTimeout(function () { i(s(e)) }, o) } function s(e) { return e + 1 >= r.length ? 0 : e + 1 } function n(e, t) { e.classList.remove("is-visible"), e.classList.add("is-hidden"), t.classList.remove("is-hidden"), t.classList.add("is-visible") } var o = 3e3, c = document.querySelector(".profile.slide"), r = c.querySelectorAll(".slide__items .slide__item"); t() });</script>
+    </head>
+    <body>
+        <main class="content">
+            <h1 class="name">Toan Dinh</h1>
+            <section class="wrapper">
+                <div class="profile slide">
+                    <span class="title slide__fixed slide__items">
+                        <span class="slide__item is-visible">Project Manager</span>
+                        <span class="slide__item">Technical Lead</span>
+                        <span class="slide__item">Software Architecture</span>
+                        <span class="slide__item">Ruby on Rails, Laravel, Magento</span>
+                        <span class="slide__item">ReactJS, VueJS, React Native</span>
+                    </span>
+                    <span class="company slide__fixed">
+                        <strong>&nbsp;@&nbsp;</strong>
+                        <a href="https://edumall.vn/">Edumall Topica Group</a>
+                    </span>
+                </div>
+            </section>
+            <ul class="links">
+                <li><a href="https://twitter.com/iamtoandinh" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://github.com/toandp" title="GitHub"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/iamtoandinh" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/toandp/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
