@@ -1,0 +1,159 @@
+sidebar:
+  about: false
+  education: True
+
+  # Profile information
+  name: Toan Dinh
+  tagline: Senior Project Manager
+  avatar: profile.jpeg
+
+  # Sidebar links
+  email: toandptech@gmail.com
+  phone: "0393947950"
+  website: toandp.dev
+  linkedin: toandp
+  github: # toandp
+  telegram: toandp
+  gitlab:
+  bitbucket:
+  twitter: '@iamtoandinh'
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+
+  languages:
+    - idiom: English
+      level: TOEIC 800
+
+  interests:
+    - item: "- I like soccer, listen RAP music in free time"
+      link:
+
+    - item: "- Play Dota2 game with my friends"
+      link:
+
+    - item: "- Performance street magic"
+      link:
+
+    - item: "- Reading book, watching movie"
+      link:
+
+    - item: "- Update new technologies from internet"
+      link:
+
+career-profile:
+  title: Objective
+  summary: |
+    In long terms, i desire to found my own tech company, providing the best solution as well as bringing a lot value to customers. Short terms, i want to take advantages of IT & product development skills, experience to work as a tech manager to contribute for your company.
+education:
+    - degree: Software Engineering
+      university: Posts and Telecommunications Institute of Technology (PTIT)
+      time: Jun 2009 - Jun 2014
+      details:
+experiences:
+    - role: Project Manager
+      time: May 2020 - Present
+      company: JAVIS ENTERPRISE
+      details: |
+        **Main responsibilities:**
+          - Managing project deliverables and quality in line with the project plan.
+          - Engaging and maintaining good relationship with customers.
+          - Providing positive influence to team members and always enhance productivity.
+          - Managing project scope and change control and escalating issues when necessary.
+    - role: Project Manager / Technical Leader / Web Developer
+      time: Dec 2015 - Feb 2020
+      company: Edumall
+      details: |
+        **Main responsibilities:**
+          - Managing project deliverables and quality in line with the project plan.
+          - Engaging and maintaining good relationship with customers.
+          - Providing positive influence to team members and always enhance productivity.
+          - Managing project scope and change control and escalating issues when necessary.
+          - Updating and providing status progress reports to the project customers and Board of Director.
+          - Performing other tasks requested by Managers.
+          - Planning and review OKRs for each member in my team.
+
+        **Recognition and Gains:**
+          - After 1 year tryhard, i promoted from developer to Technical Leader.
+          - After 2 year tryhard, i promoted from developer to Manager (role Project Manager)
+    - role: Web Developer
+      time:  May 2014 - Sep 2015
+      company: VDO - VietNam Data Online
+      details: |
+        **Main responsibilities:**
+          - Build web framework based on Wordpress CMS.
+          - Web Development.
+          - Along with sales employees to meet customers, provide technical solutions.
+
+        **Recognition and Gains:**
+          - After 6 months tryhard, i promoted from developer to Technical Leader.
+    - role: Co-Founder
+      time:  Aug 2013 - May 2014
+      company: ERA Theme
+      details: |
+        **Main responsibilities:**
+          - Develop Prestashop theme framework (Backend, Frontend).
+          - Planning Marketing solutions on Google and Facebook.
+projects:
+    title: Projects
+    intro:
+    assignments:
+      - title: Edumall Ecommerce Platform
+        link:
+        tagline: "This's biggest revolution Edumall platform, transform from landing page marketing to standard ecommerce marketing. Based on Magento platform, we built big system and worked with legacy system very well. After one year tryhard, we delivered platform for two market: Vietnam and Thailand with full scopes and high quality (Passed test case: 92%)"
+
+      - title: Edumall AutoCOD + AutoSales
+        link:
+        tagline: "This's service that increatement sales revenue and reduce the employee effort. With ML algorithm, we can recognize contact can be place order without sale support."
+
+      - title: Edumall CRM
+        link:
+        tagline: "90% Edumall's revenue from sales directly. So, we must have create the best system for 150 sales people to bring the best revenue for my company. Based on 3 core service: 1. Sales - 2. Payment - 3.Shipment, the data update via Message Bus system, we created the CRM service with capacity avg 3000 orders per day, can meet 10000 orders per day."
+
+      - title: Landing page Management
+        link:
+        tagline: "Edumall has over 5000 landing page for marketing. We make over 100 landing page per day for optimize or grow up Facebook Ads. This is the service that helps employees create and manage own landing page very easy."
+
+# publications:
+#     title: Publications
+#     intro: |
+#       You can list your publications in this section. Lorem ipsum dolor sit
+#       amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#       bibendum fringilla a eu lectus.
+#     papers:
+#       - title: The Art of Computer Programming
+#         link: "#"
+#         authors: Donald E. Knuth
+#         conference: Addison-Wesley, 1968
+
+#       - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#         link: "#"
+#         authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#         conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#       - title: A syntax directed compiler for Algol 60
+#         link: "#"
+#         authors: Edgar T. Irons
+#         conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Ruby on Rails
+        level: 90%
+
+      - name: PHP
+        level: 80%
+
+      - name: React JS
+        level: 70%
+
+      - name: HTML/CSS/JS
+        level: 90%
+
+      - name: Word/Excel/Powerpoint
+        level: 50%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="https://toandp.dev" rel="nofollow">Toan Dinh</a>

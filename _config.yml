@@ -1,0 +1,34 @@
+# Site settings
+title: Toan Dinh - toandp.dev
+email: toandptech@gmail.com
+description: A beautiful Jekyll theme for creating resume
+baseurl: ""
+url: "https://toandp.dev"
+twitter_username: iamtoandinh
+github_username:  toandp
+theme_skin: blue
+chrome_mobile_color:
+
+# Tracker
+analytics: UA-83979019-1
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+compress-site: yes
+
+encoding: "utf-8"
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+plugins:
+  - jekyll-feed
+
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
